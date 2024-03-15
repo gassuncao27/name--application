@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NameApplication</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
+<body>
+
+  <div class = "logo">
+    <%= image_tag("logos/logo.png", width: "200px") %>
+  </div>
+
+  <%= render "shared/nav" %>
+  <%= render "shared/alerts" %>
+
+<%= yield %>
+
+</body>
+</html>
